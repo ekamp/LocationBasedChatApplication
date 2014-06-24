@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollFragment" >
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:id="@+id/locationPicture"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:src="@android:drawable/toast_frame" />
+
+</FrameLayout>
