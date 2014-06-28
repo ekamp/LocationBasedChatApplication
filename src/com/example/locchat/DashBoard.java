@@ -1,7 +1,5 @@
 package com.example.locchat;
 
-import components.ScrollFragment;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -10,6 +8,9 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
+import android.widget.TextView;
+
+import components.ScrollFragment;
 
 public class DashBoard extends FragmentActivity {
 
@@ -28,14 +29,12 @@ public class DashBoard extends FragmentActivity {
      * and next wizard steps.
      */
     private ViewPager mPager;
-
-
+    
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_dash_board);
-		
 		// Instantiate a ViewPager and a PagerAdapter.
         mPager = (ViewPager) findViewById(R.id.pager);
         scrollAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
@@ -69,18 +68,20 @@ public class DashBoard extends FragmentActivity {
             super(fm);
         }
 
-//This method controls what fragment appears based on the position
         @Override
         public Fragment getItem(int position) {
-        	System.out.println("Position is "+position);
+        	
+        	//First need to update the text information based on which fragment is showing
+        	//Need to enter in the information for each different fragment
         	switch(position)
         	{
-        	case 0: return ScrollFragment.newInstance("1",0);
-        	case 1: return ScrollFragment.newInstance("2",1);
-        	case 2: return ScrollFragment.newInstance("3",2);
-        	case 3: return ScrollFragment.newInstance("4",3);
-        	case 4: return ScrollFragment.newInstance("5",4);
-        	default: return ScrollFragment.newInstance("Default",-1);
+	        	case 0:
+	        		return ScrollFragment.newInstance(0,"4 White Street Red Bank NJ", 20,"Starbucks");
+	        	case 1:
+	        		return ScrollFragment.newInstance(1,"New Brunswick NJ", 30, "Rutgers");
+	        	case 2:
+	        		return ScrollFragment.newInstance(2,"869 US 1 North Brunswick NJ", 10, "Barnes & Noble");
+	        	default: return ScrollFragment.newInstance(2,"869 US 1 North Brunswick NJ", 10, "Barnes & Noble");
         	}
         }
 

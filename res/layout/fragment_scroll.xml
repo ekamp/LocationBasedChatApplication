@@ -11,8 +11,67 @@
 
     <ImageView
         android:id="@+id/locationPicture"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
         android:src="@android:drawable/toast_frame" />
+
+    <ImageView
+        android:id="@+id/chatbutton"
+        android:layout_width="50dp"
+        android:layout_height="54dp"
+        android:src="@drawable/chaticon" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="#dde3eb"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/chatRoomName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:text="ChatRoom Name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#6f7277"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/UsersInRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/chatRoomName"
+                android:layout_below="@+id/chatRoomName"
+                android:layout_marginTop="32dp"
+                android:text="Users : "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#6f7277"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/UsersInRoom"
+                android:layout_marginTop="39dp"
+                android:text="Address"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#6f7277"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 
 </FrameLayout>

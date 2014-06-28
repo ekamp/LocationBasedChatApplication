@@ -22,28 +22,38 @@ public final class R {
     }
     public static final class drawable {
         public static final int barnsandnoble=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int rutgers=0x7f020002;
-        public static final int starbucks=0x7f020003;
+        public static final int chaticon=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int rutgers=0x7f020003;
+        public static final int starbucks=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f080003;
+        public static final int Address=0x7f080006;
+        public static final int UsersInRoom=0x7f080005;
+        public static final int action_settings=0x7f080008;
+        public static final int chatRoomName=0x7f080004;
+        public static final int chatbutton=0x7f080003;
+        public static final int infoField=0x7f080007;
         public static final int locationPicture=0x7f080002;
         public static final int pager=0x7f080000;
         public static final int textViewID=0x7f080001;
     }
     public static final class layout {
         public static final int activity_dash_board=0x7f030000;
-        public static final int fragment_scroll=0x7f030001;
+        public static final int chatlayout=0x7f030001;
+        public static final int fragment_scroll=0x7f030002;
+        public static final int informationrow=0x7f030003;
     }
     public static final class menu {
-        public static final int dash_board=0x7f070000;
+        public static final int chat=0x7f070000;
+        public static final int dash_board=0x7f070001;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int hello_blank_fragment=0x7f050003;
         public static final int hello_world=0x7f050002;
+        public static final int title_activity_chat=0x7f050004;
     }
     public static final class style {
         /** 
@@ -72,5 +82,11 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f060001;
+        /**  ActionBar styles 
+         */
+        public static final int MyActionBar=0x7f060003;
+        /**  the theme applied to the application or activity 
+         */
+        public static final int blueTheme=0x7f060002;
     }
 }
